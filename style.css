@@ -1,0 +1,55 @@
+#canvas-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+#canvas {
+  height: 520px;
+  width: max-content;
+  margin: 50px;
+  align-items: flex-end;
+}
+
+.bar {
+  width: 35px;
+  background-color: #15c75f;
+  margin: 2px;
+}
+
+.selected {
+  background-color: #efcaca !important;
+  color: white;
+  border-radius: 5px;
+}
+
+
+@media (width < 460px) {
+  .bar {
+    width: 8px;
+    background-color: #15c75f;
+    margin: 0;
+  }
+
+  .gap-3 {
+    gap: 0rem;
+  }
+}
+
+@media (min-width: 460px) and (max-width: 650px) {
+  .bar {
+    width: 15px;
+    background-color: #15c75f;
+    margin: 0;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 1000px) {
+  .bar {
+    width: 20px;
+    background-color: #15c75f;
+    margin: 2px;
+  }
+}
